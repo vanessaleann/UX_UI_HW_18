@@ -1,0 +1,168 @@
+header {
+    background-color: #F3EB63;
+    width: 100%;
+  }
+  
+  .header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    max-width: 1728px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 40px;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 469px;
+    background-color: #F3EB63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .text-container {
+    position: absolute;
+    width: 471px;
+    height: 404px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 3%;
+    z-index: 2;
+  }
+  
+  .text {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .text span.italic {
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  /* home photo of myself below */
+  
+  .image-container img {
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    transform: translateX(-50%);
+    width: 36%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+  
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+    
+    nav li a {
+      font-size: 14px;
+    }
+    
+    .image-container {
+      height: 300px;
+    }
+  }
+
+
+  /* My Work Section Constructed using CSS Grid */
+    /* add any necessary styles here */
+
+  
+  .workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "project1 project2"
+      "project3 project4";
+    gap: 20px;
+  }
+  
+  .project1 {
+    grid-area: project1;
+  }
+  
+  .project2 {
+    grid-area: project2;
+  }
+  
+  .project3 {
+    grid-area: project3;
+  }
+  
+  .project4 {
+    grid-area: project4;
+  }
+  
+  .project-info {
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  button {
+    background-color: #F3EB63;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ee88d1;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  
